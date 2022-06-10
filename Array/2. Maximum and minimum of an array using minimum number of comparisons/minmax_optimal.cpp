@@ -54,19 +54,18 @@ struct Pair maxmin(int arr[], int n)
 
 int main()
 {
+   int t;
+   cin >> t;
+   while(t--)
+   {
     int n, i;
-    
-    cout << "Enter the no of elements";
     cin >> n;
-
     int arr[n];
-    
     for (i = 0; i < n; i++)
         cin >> arr[i];
-
     Pair num = maxmin(arr, n);
+    cout << num.max<<" "<< num.min<<endl;
 
-    cout <<"Min Number: "<< num.min << " Max Number: " << num.max;
-
+    }
     return 0;
 }
