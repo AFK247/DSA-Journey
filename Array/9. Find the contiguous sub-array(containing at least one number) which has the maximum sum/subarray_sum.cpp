@@ -17,12 +17,12 @@ int main()
 
             if (sum < prev_sum)
                 temp = prev_sum;
-            else
-            {
+            else{
                 temp = sum;
             }
+                
 
-            if (temp > temp2)
+             if (temp > temp2)
                 temp2 = temp;
         }
         cout<< temp2 << endl;
